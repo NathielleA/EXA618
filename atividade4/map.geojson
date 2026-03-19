@@ -1,0 +1,1657 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7363584,
+                    -9.66854
+                ]
+            },
+            "properties": {
+                "tipo": "fuel",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7213567,
+                    -9.6715454
+                ]
+            },
+            "properties": {
+                "tipo": "place_of_worship",
+                "nome": "Igreja Nossa Senhora da Mãe do Povo"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7262403,
+                    -9.6694489
+                ]
+            },
+            "properties": {
+                "tipo": "pub",
+                "nome": "Orakulo Chopperia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7163999,
+                    -9.6703043
+                ]
+            },
+            "properties": {
+                "tipo": "fuel",
+                "nome": "BR"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7151442,
+                    -9.6697039
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Sorveteria Bali"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7056117,
+                    -9.6632261
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Janga Praia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7311907,
+                    -9.6583525
+                ]
+            },
+            "properties": {
+                "tipo": "taxi",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.711092,
+                    -9.6644063
+                ]
+            },
+            "properties": {
+                "tipo": "pharmacy",
+                "nome": "Farmácia Permanente"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7235068,
+                    -9.6593724
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Nutri Refeição"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7128476,
+                    -9.6559405
+                ]
+            },
+            "properties": {
+                "tipo": "school",
+                "nome": "Escola Estadual Professor Thetotônio Vilela Brandão"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7215905,
+                    -9.6566646
+                ]
+            },
+            "properties": {
+                "tipo": "veterinary",
+                "nome": "Hospital Veterinario Almir Tavares"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7206937,
+                    -9.6563478
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7103215,
+                    -9.6587199
+                ]
+            },
+            "properties": {
+                "tipo": "bar",
+                "nome": "Confraria do Rei"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7116491,
+                    -9.6585076
+                ]
+            },
+            "properties": {
+                "tipo": "bar",
+                "nome": "Vira Verão"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7101712,
+                    -9.6574632
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Amarelinho"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.711526,
+                    -9.6562285
+                ]
+            },
+            "properties": {
+                "tipo": "police",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7152513,
+                    -9.6538778
+                ]
+            },
+            "properties": {
+                "tipo": "bar",
+                "nome": "Bar Faculdade do Espeto"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7151067,
+                    -9.6566178
+                ]
+            },
+            "properties": {
+                "tipo": "bar",
+                "nome": "Kebra Kama Bar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7164585,
+                    -9.6658294
+                ]
+            },
+            "properties": {
+                "tipo": "car_rental",
+                "nome": "Locarauto"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7227492,
+                    -9.6681179
+                ]
+            },
+            "properties": {
+                "tipo": "theatre",
+                "nome": "Teatro Gustavo Leite"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7136962,
+                    -9.6657109
+                ]
+            },
+            "properties": {
+                "tipo": "bar",
+                "nome": "Guaraná Bar Pajuçara"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7069053,
+                    -9.6568645
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7283817,
+                    -9.662063
+                ]
+            },
+            "properties": {
+                "tipo": "fuel",
+                "nome": "Posto São José"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7244419,
+                    -9.6721356
+                ]
+            },
+            "properties": {
+                "tipo": "parking_entrance",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7332653,
+                    -9.6601314
+                ]
+            },
+            "properties": {
+                "tipo": "place_of_worship",
+                "nome": "Igreja Batista do Farol"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7267383,
+                    -9.6603423
+                ]
+            },
+            "properties": {
+                "tipo": "place_of_worship",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7307629,
+                    -9.6646848
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "V Lanches"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7306931,
+                    -9.6645984
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "SANE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.708704,
+                    -9.6647625
+                ]
+            },
+            "properties": {
+                "tipo": "atm",
+                "nome": "Banco do Brasil"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7073127,
+                    -9.6603531
+                ]
+            },
+            "properties": {
+                "tipo": "bench",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7074222,
+                    -9.6603758
+                ]
+            },
+            "properties": {
+                "tipo": "bench",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7350686,
+                    -9.665766
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7353194,
+                    -9.664423
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7359713,
+                    -9.6645563
+                ]
+            },
+            "properties": {
+                "tipo": "bank",
+                "nome": "Itaú"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7358592,
+                    -9.66473
+                ]
+            },
+            "properties": {
+                "tipo": "bank",
+                "nome": "Banco Santander"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7292018,
+                    -9.6667513
+                ]
+            },
+            "properties": {
+                "tipo": "fuel",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7235351,
+                    -9.6538088
+                ]
+            },
+            "properties": {
+                "tipo": "community_centre",
+                "nome": "Centro Comunitário Santo Antônio"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7052897,
+                    -9.6562979
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.735585,
+                    -9.6631051
+                ]
+            },
+            "properties": {
+                "tipo": "place_of_worship",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7108817,
+                    -9.6654765
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Subway"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7153812,
+                    -9.6693053
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Cadillac Burguer Sports"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7153715,
+                    -9.6695604
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Pastel Chinês - O Original"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7153044,
+                    -9.669365
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Pizzaria Fornaria"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7174816,
+                    -9.6708629
+                ]
+            },
+            "properties": {
+                "tipo": "bar",
+                "nome": "Rex Bar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7154318,
+                    -9.6695211
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Sarah's Esfihas & Fogazzas"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7115261,
+                    -9.6658771
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Nui Poke"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7126155,
+                    -9.6668863
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Paraíso Lanches"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7142016,
+                    -9.6587196
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Adega do Crepe"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7225616,
+                    -9.6602717
+                ]
+            },
+            "properties": {
+                "tipo": "fire_station",
+                "nome": "Academia Brasileira de Bombeiro Civil"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7057865,
+                    -9.6639006
+                ]
+            },
+            "properties": {
+                "tipo": "pub",
+                "nome": "Kanoa Beach Bar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.713175,
+                    -9.6673523
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Bene Coffee & Natural Food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7345391,
+                    -9.6585373
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Sorveteria Fika Frio"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7246416,
+                    -9.6609478
+                ]
+            },
+            "properties": {
+                "tipo": "place_of_worship",
+                "nome": "Instituto Espírita Manoel Batista"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7059239,
+                    -9.6556931
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7150347,
+                    -9.669538
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Casa da Macarronada"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7121269,
+                    -9.6654254
+                ]
+            },
+            "properties": {
+                "tipo": "post_office",
+                "nome": "Correios"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7148308,
+                    -9.6687231
+                ]
+            },
+            "properties": {
+                "tipo": "dive_centre",
+                "nome": "Let's Dive"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7149407,
+                    -9.6686358
+                ]
+            },
+            "properties": {
+                "tipo": "dentist",
+                "nome": "Reabilitação Oral"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7223711,
+                    -9.6594744
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.706068,
+                    -9.6606856
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7101643,
+                    -9.6633039
+                ]
+            },
+            "properties": {
+                "tipo": "bank",
+                "nome": "Banco Inter"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.70959,
+                    -9.6632534
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Cara de Hamburguer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7088126,
+                    -9.6631902
+                ]
+            },
+            "properties": {
+                "tipo": "bureau_de_change",
+                "nome": "Pratagy Cambio Exchange"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7101722,
+                    -9.6633596
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7073356,
+                    -9.6591824
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Kiosk Sushi"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7072626,
+                    -9.6596315
+                ]
+            },
+            "properties": {
+                "tipo": "bench",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7073015,
+                    -9.6597095
+                ]
+            },
+            "properties": {
+                "tipo": "bench",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.707276,
+                    -9.6598721
+                ]
+            },
+            "properties": {
+                "tipo": "bench",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7054294,
+                    -9.6590626
+                ]
+            },
+            "properties": {
+                "tipo": "car_rental",
+                "nome": "SR Locações e Serviços"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7348741,
+                    -9.653541
+                ]
+            },
+            "properties": {
+                "tipo": "clinic",
+                "nome": "Hemopac - Banco de Sangue"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7138044,
+                    -9.6537027
+                ]
+            },
+            "properties": {
+                "tipo": "bar",
+                "nome": "Boteco 082"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7055845,
+                    -9.6610503
+                ]
+            },
+            "properties": {
+                "tipo": "place_of_worship",
+                "nome": "Igreja São Pedro"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7058226,
+                    -9.6619083
+                ]
+            },
+            "properties": {
+                "tipo": "cafe",
+                "nome": "Café São Braz"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7065776,
+                    -9.6620458
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "China in Box"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7344338,
+                    -9.6635868
+                ]
+            },
+            "properties": {
+                "tipo": "university",
+                "nome": "CESMAC - Campus IV"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7363225,
+                    -9.6642558
+                ]
+            },
+            "properties": {
+                "tipo": "bank",
+                "nome": "Banco Safra"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7073448,
+                    -9.6601891
+                ]
+            },
+            "properties": {
+                "tipo": "food_court",
+                "nome": "Quintal Food Park"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.709035,
+                    -9.6535687
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Casa Budega"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.710261,
+                    -9.664879
+                ]
+            },
+            "properties": {
+                "tipo": "ice_cream",
+                "nome": "Senhor gelado"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7356941,
+                    -9.6577858
+                ]
+            },
+            "properties": {
+                "tipo": "place_of_worship",
+                "nome": "Assembleia de Deus - Farol"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7342906,
+                    -9.6567022
+                ]
+            },
+            "properties": {
+                "tipo": "school",
+                "nome": "Colégio Santa Madalena Sofia II"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.73437,
+                    -9.6633642
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Pastel do Magno"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7335122,
+                    -9.6566409
+                ]
+            },
+            "properties": {
+                "tipo": "clinic",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7317738,
+                    -9.6591334
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7318547,
+                    -9.6611828
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7203039,
+                    -9.6721537
+                ]
+            },
+            "properties": {
+                "tipo": "bench",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7202707,
+                    -9.6720882
+                ]
+            },
+            "properties": {
+                "tipo": "bench",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7242623,
+                    -9.6642799
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7362185,
+                    -9.6686989
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7325405,
+                    -9.6541276
+                ]
+            },
+            "properties": {
+                "tipo": "clinic",
+                "nome": "Medtrab - Medicina do Trabalho"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.705774,
+                    -9.661849
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Parmegianno"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7086717,
+                    -9.6626402
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Lions Self Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7053277,
+                    -9.6626322
+                ]
+            },
+            "properties": {
+                "tipo": "parking",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.705325,
+                    -9.6625681
+                ]
+            },
+            "properties": {
+                "tipo": "clinic",
+                "nome": "Gastro Intestinal"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.71706,
+                    -9.6710684
+                ]
+            },
+            "properties": {
+                "tipo": "cafe",
+                "nome": "Café do Sobrado"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7351808,
+                    -9.6688634
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Restaurante Zepellin"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7319397,
+                    -9.6677251
+                ]
+            },
+            "properties": {
+                "tipo": "place_of_worship",
+                "nome": "Comunidade Evangélica Sara Nossa Terra"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7321492,
+                    -9.661901
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Empório Farol"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7088646,
+                    -9.6561767
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "La Empanada"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7212404,
+                    -9.6719926
+                ]
+            },
+            "properties": {
+                "tipo": "pub",
+                "nome": "Quintal do Hop"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7086287,
+                    -9.6636042
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Casa de Mainha"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7095966,
+                    -9.6602462
+                ]
+            },
+            "properties": {
+                "tipo": "clinic",
+                "nome": "ITC Vertebral"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7088854,
+                    -9.6590647
+                ]
+            },
+            "properties": {
+                "tipo": "pharmacy",
+                "nome": "Farmácia do Trabalhador de Alagoas"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7079705,
+                    -9.6540777
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Odara"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7079494,
+                    -9.6540812
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Tamarineira"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7149684,
+                    -9.6694302
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Cheiro da Terra"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7278846,
+                    -9.664531
+                ]
+            },
+            "properties": {
+                "tipo": "bench",
+                "nome": "Nao disponivel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7056869,
+                    -9.6621862
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Berí Natural"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7057235,
+                    -9.6621983
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Lina Healthy Food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7254833,
+                    -9.6686649
+                ]
+            },
+            "properties": {
+                "tipo": "fast_food",
+                "nome": "Ponto do suco"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7252339,
+                    -9.6685112
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Padaria Jaraguá"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7234962,
+                    -9.6598746
+                ]
+            },
+            "properties": {
+                "tipo": "hospital",
+                "nome": "Hospital da Mulher"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7234369,
+                    -9.6598066
+                ]
+            },
+            "properties": {
+                "tipo": "hospital",
+                "nome": "Maternidade Escola Santa Monica"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7213175,
+                    -9.6694888
+                ]
+            },
+            "properties": {
+                "tipo": "community_centre",
+                "nome": "Centro de Inovação do Jaraguá"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7159784,
+                    -9.6691368
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Casinha Verde"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7124509,
+                    -9.6625962
+                ]
+            },
+            "properties": {
+                "tipo": "place_of_worship",
+                "nome": "Jericó"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7107047,
+                    -9.6648954
+                ]
+            },
+            "properties": {
+                "tipo": "arts_centre",
+                "nome": "Centro Cultural Arte Pajuçara"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -35.7106191,
+                    -9.6640141
+                ]
+            },
+            "properties": {
+                "tipo": "restaurant",
+                "nome": "Bodega do Sertão"
+            }
+        }
+    ]
+}
