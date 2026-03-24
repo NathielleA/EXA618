@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup
 
 with open("atividade5/seeds.txt", "r") as file, open("atividade5/output.html", "w", encoding="utf-8") as output_file:
     # Escreve o cabeçalho do HTML
-    output_file.write("""<!DOCTYPE html>\n<html lang='pt-br'>\n<head>\n<meta charset='UTF-8'>\n<title>Resultados</title>\n</head>\n<body>\n""")
+    output_file.write("""<!DOCTYPE html>\n<html lang='pt-br'>\n<head>\n<meta charset='UTF-8'>\n<title>Atividade 5 - Parse HTML (Nathielle)</title>\n</head>\n<body>\n""")
+    output_file.write("<h1>Títulos e Imagens Extraídas: </h1>\n")
 
     for line in file:
         url = line.strip()
