@@ -1,25 +1,31 @@
 import urllib.request
 from bs4 import BeautifulSoup
 
-file = open("atividade5\seeds.txt", "r") # Abrindo arquivo com as URLs
+with open("atividade5/seeds.txt", "r") as file, open("atividade5/output.html", "w", encoding="utf-8") as output_file:
+    # Escreve o cabeçalho do HTML
+    output_file.write("""<!DOCTYPE html>\n<html lang='pt-br'>\n<head>\n<meta charset='UTF-8'>\n<title>Resultados</title>\n</head>\n<body>\n""")
 
-# Criando um arquivo .txt para armazenar os resultados
-output_file = open("atividade5\output.txt", "w")
+    for line in file:
+        url = line.strip()
+        try:
+            page = urllib.request.urlopen(url)
+            html = page.read().decode('utf-8')
+            soup = BeautifulSoup(html, 'html.parser')
 
-# Percorrendo o arquivo linha por linha, acessando cada URL e extraindo o título e as imagens
-for line in file:
-    page = urllib.request.urlopen(line.strip())
-    html = str(page.read().decode('utf-8'))
+            titulo = soup.head.title.string.strip() if soup.head and soup.head.title else "Sem título"
 
-    soup = BeautifulSoup(html, 'html.parser')
+            imagens = []
+            for img in soup.find_all('img'):
+                imagem = img.attrs.get("src")
+                if imagem:
+                    if not imagem.startswith("http"):
+                        imagem = url.rstrip('/') + "/" + imagem.lstrip('/')
 
-    titulo = soup.title.string if soup.title else "Sem título"
-    output_file.write("Titulo " + titulo + "\n")
+                    output_file.write(f"<h2>{titulo}</h2>\n")
+                    output_file.write(f"<img src=\"{imagem}\" alt=\"Imagem\" style='max-width:400px;'><br>\n")                
 
-    for img in soup.find_all('img'):
-        imagem = img.attrs.get("src")
-        if imagem:
-            output_file.write("Imagem: " + imagem + "\n")
+        except Exception as e:
+            output_file.write(f"<p>Erro ao acessar {url}: {e}</p>\n")
 
-output_file.close()
-file.close()
+    # Fecha o HTML
+    output_file.write("</body>\n</html>")
