@@ -4,18 +4,19 @@ from bs4 import BeautifulSoup
 
 def main():
     livros = extrair_abreviaturas("https://www.bibliaonline.com.br/acf") # ACF é a versão padrão do site
+    print(livros)
 
     url = "https://www.bibliaonline.com.br/"
 
     file = open("Projeto-Individual/crawler/DadosExtraidosBibliaOnline.csv", "a", encoding="utf-8")
-    file.write("Livro,Capítulo,Versículo,Texto,Versão\n") # Escreve o cabeçalho do arquivo CSV
+    file.write("Livro|Capítulo|Versículo|Texto|Versão\n") # Escreve o cabeçalho do arquivo CSV
 
     for livro in livros:
         url_livro = url + "acf/" + livro
         print(f"Extraindo versículos de {livro}...")
-        print(f"URL: {url_livro}")
-        extrair_versiculos(url_livro, file)
-        file.close()
+        extrair_versiculos(livro, url_livro, file)
+    
+    file.close()
 
 def extrair_abreviaturas(url):
 
@@ -24,7 +25,7 @@ def extrair_abreviaturas(url):
 
     # Extrair todas as abreviaturas dos livros, começando do terceiro pois os dois primeiros são abreviaturas dos versículos do dia
     abreviaturas = list()
-    for a in soup.find_all("a", href=True)[3:]:
+    for a in soup.find_all("a", href=True)[3:70]: # Abrangendo os 66 livros
         href = a["href"]
         if href.startswith("/acf/"):
             partes = href.split("/")
@@ -37,7 +38,7 @@ def extrair_abreviaturas(url):
 
     return abreviaturas
 
-def extrair_versiculos(url, file):
+def extrair_versiculos(livro, url, file):
 
     capitulos = extrair_capitulos(url)
 
@@ -46,8 +47,6 @@ def extrair_versiculos(url, file):
         
         response = requests.get(url_capitulo)
         soup = BeautifulSoup(response.text, "html.parser")
-
-        file.write(f"Livro: {soup.title.get_text(strip=True)}\n")  # Escreve o nome do livro no arquivo pelo título da página
 
         # Encontrar todos os spans de número de versículo
         versiculos_num = soup.find_all("span", class_="v")
@@ -61,7 +60,7 @@ def extrair_versiculos(url, file):
             if texto_span:
                 texto = texto_span.get_text(strip=True)
                 print(numero, texto)
-                file.write(f"{numero}: {texto}\n")
+                file.write(f"{livro}|{capitulo}|{numero}|{texto}|ACF\n")
 
 def extrair_capitulos(url):
     # Extraíndo número de capítulos de um livro
