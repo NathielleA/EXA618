@@ -8,11 +8,11 @@ def main():
 
     url = "https://www.bibliaonline.com.br/"
 
-    file = open("Projeto-Individual/crawler/DadosExtraidosBibliaOnline.csv", "a", encoding="utf-8")
+    file = open("Projeto-Individual/crawler/DadosExtraidosBibliaOnline_NVI.csv", "a", encoding="utf-8")
     file.write("Livro|Capítulo|Versículo|Texto|Versão\n") # Escreve o cabeçalho do arquivo CSV
 
     for livro in livros:
-        url_livro = url + "acf/" + livro
+        url_livro = url + "nvi/" + livro
         print(f"Extraindo versículos de {livro}...")
         extrair_versiculos(livro, url_livro, file)
     
@@ -60,7 +60,7 @@ def extrair_versiculos(livro, url, file):
             if texto_span:
                 texto = texto_span.get_text(strip=True)
                 print(numero, texto)
-                file.write(f"{livro}|{capitulo}|{numero}|{texto}|ACF\n")
+                file.write(f"{livro}|{capitulo}|{numero}|{texto}|NVI\n")
 
 def extrair_capitulos(url):
     # Extraíndo número de capítulos de um livro
@@ -68,7 +68,7 @@ def extrair_capitulos(url):
     soup = BeautifulSoup(response.text, "html.parser")
 
     capitulos = soup.find_all("a", href=True)
-    capitulos_num = [c for c in capitulos if c["href"].startswith("/acf/") and c["href"].count("/") == 3] # Filtra apenas os links que correspondem aos capítulos
+    capitulos_num = [c for c in capitulos if c["href"].startswith("/nvi/") and c["href"].count("/") == 3] # Filtra apenas os links que correspondem aos capítulos
     capitulos_num = [c["href"].split("/")[3] for c in capitulos_num] # Extrai o número do capítulo do link
 
     return capitulos_num
