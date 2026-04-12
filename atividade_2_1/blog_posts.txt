@@ -1,0 +1,2 @@
+# Arquivo de dados das postagens do blog CGI
+# Formato: autor\tmensagem\tdata
