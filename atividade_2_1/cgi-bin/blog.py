@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import cgi
-import cgitb
-import os
-from datetime import datetime
 
-cgitb.enable()
+import os
+import sys
+from datetime import datetime
+from urllib.parse import parse_qs
 
 DATA_FILE = os.path.join(os.path.dirname(__file__), 'blog_posts.txt')
 
@@ -26,23 +25,32 @@ def save_post(autor, mensagem):
     with open(DATA_FILE, 'a', encoding='utf-8') as f:
         f.write(f"{autor}\t{mensagem}\t{data}\n")
 
+
+import html
 def print_posts(posts):
     for post in posts:
         print(f"<div style='border:1px solid #ccc; margin-bottom:10px; padding:10px;'>")
-        print(f"<strong>{post['autor']}</strong> em {post['data']}<br>")
-        print(f"<pre style='white-space:pre-wrap;'>{cgi.escape(post['mensagem'])}</pre>")
+        print(f"<strong>{html.escape(post['autor'])}</strong> em {post['data']}<br>")
+        print(f"<pre style='white-space:pre-wrap;'>{html.escape(post['mensagem'])}</pre>")
         print("</div>")
 
-print("Content-type: text/html; charset=utf-8\n")
-print("<html><head><title>Blog CGI Simples</title></head><body>")
-print("<h1>Blog CGI Simples</h1>")
 
-form = cgi.FieldStorage()
-if form.getvalue('autor') and form.getvalue('mensagem'):
-    autor = form.getvalue('autor')
-    mensagem = form.getvalue('mensagem')
-    save_post(autor, mensagem)
-    print("<p><b>Mensagem enviada com sucesso!</b></p>")
+print("Content-type: text/html; charset=utf-8\n")
+print("<html><head><title>Atividade 2.1 - Blog CGI Simples</title></head><body>")
+print("<h1>Blog de Mensagens</h1>")
+
+# Detecta método
+method = os.environ.get("REQUEST_METHOD", "GET")
+autor = mensagem = None
+if method == "POST":
+    content_length = int(os.environ.get("CONTENT_LENGTH", 0))
+    body = sys.stdin.buffer.read(content_length).decode('utf-8')
+    params = parse_qs(body, encoding="utf-8")
+    autor = params.get("autor", [""])[0]
+    mensagem = params.get("mensagem", [""])[0]
+    if autor and mensagem:
+        save_post(autor, mensagem)
+        print("<p><b>Mensagem enviada com sucesso!</b></p>")
 
 print("<form method='POST' action='/cgi-bin/blog.py'>")
 print("Autor: <input type='text' name='autor' required><br>")
