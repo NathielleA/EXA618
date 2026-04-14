@@ -12,8 +12,8 @@ DATA_FILE = os.path.join(os.path.dirname(__file__), 'blog_posts.csv')
 def handler(request, response):
 
     if request.method == "GET":
-        post = read_posts()
-        return response.json(post)
+        posts = read_posts()
+        return response.json({"posts": posts})
     
     elif request.method == "PUT":
         data = request.json()

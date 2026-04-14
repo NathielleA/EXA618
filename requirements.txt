@@ -1,0 +1,3 @@
+# Requisitos mínimos para API Python no Vercel
+fastapi
+uvicorn
