@@ -45,3 +45,6 @@ def save_post(autor, mensagem):
     data = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
     with open(DATA_FILE, 'a', encoding='utf-8') as f:
         f.write(f"{autor},{mensagem},{data}\n")
+
+# Exportação explícita para Vercel
+app = handler
