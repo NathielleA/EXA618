@@ -1,18 +1,17 @@
 import os
+import json
 from datetime import datetime
 from pymongo import MongoClient
 
 MONGODB_URI = os.environ.get('MONGODB_URI')
-MONGO_DB = 'blogdb'
-MONGO_COLLECTION = 'posts'
 
 def get_collection():
     if not MONGODB_URI:
         raise Exception("MONGODB_URI não definida")
 
     client = MongoClient(MONGODB_URI)
-    db = client[MONGO_DB]
-    return db[MONGO_COLLECTION]
+    db = client['blogdb']
+    return db['posts']
 
 
 def handler(request):
@@ -20,46 +19,42 @@ def handler(request):
         collection = get_collection()
 
         if request.method == "GET":
-            posts = []
-            for doc in collection.find({}, {'_id': 0}).sort('data', -1):
-                posts.append(doc)
-
+            posts = list(collection.find({}, {'_id': 0}))
             return {
                 "statusCode": 200,
-                "body": {"posts": posts}
+                "body": json.dumps({"posts": posts})
             }
 
         elif request.method == "PUT":
-            data = request.get_json()
+            data = json.loads(request.body)
 
-            autor = data.get("autor", "")
-            mensagem = data.get("mensagem", "")
+            autor = data.get("autor")
+            mensagem = data.get("mensagem")
 
-            if autor and mensagem:
-                post = {
-                    'autor': autor,
-                    'mensagem': mensagem,
-                    'data': datetime.now().strftime('%d/%m/%Y %H:%M:%S')
-                }
-                collection.insert_one(post)
-
+            if not autor or not mensagem:
                 return {
-                    "statusCode": 200,
-                    "body": {"status": "success"}
+                    "statusCode": 400,
+                    "body": json.dumps({"error": "Campos obrigatórios"})
                 }
+
+            collection.insert_one({
+                "autor": autor,
+                "mensagem": mensagem,
+                "data": datetime.now().strftime('%d/%m/%Y %H:%M:%S')
+            })
 
             return {
-                "statusCode": 400,
-                "body": {"error": "Autor e mensagem obrigatórios"}
+                "statusCode": 200,
+                "body": json.dumps({"status": "ok"})
             }
 
         return {
             "statusCode": 405,
-            "body": {"error": "Método não permitido"}
+            "body": json.dumps({"error": "Método não permitido"})
         }
 
     except Exception as e:
         return {
             "statusCode": 500,
-            "body": {"error": str(e)}
+            "body": json.dumps({"error": str(e)})
         }
