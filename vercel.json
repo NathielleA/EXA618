@@ -1,8 +1,15 @@
 {
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/blog.py",
+            "use": "@vercel/python"
+        }
+    ],
     "routes": [
         {
-            "src": "/api/(.*)",
-            "dest": "/api/$1"
+            "src": "/api/blog",
+            "dest": "api/blog.py"
         }
     ]
 }
