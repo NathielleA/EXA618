@@ -7,9 +7,10 @@ MONGODB_URI = os.environ.get('MONGODB_URI')
 MONGO_DB = 'blogdb'
 MONGO_COLLECTION = 'posts'
 
-client = MongoClient(MONGODB_URI)
-db = client[MONGO_DB]
-collection = db[MONGO_COLLECTION]
+def getCollection():
+    client = MongoClient(MONGODB_URI)
+    db = client[MONGO_DB]
+    return db[MONGO_COLLECTION]
 
 # Função da API para rodar no Vercel
 def handler(request, response):
@@ -18,7 +19,7 @@ def handler(request, response):
             posts = read_posts()
             return response.json({"posts": posts})
         elif request.method == "PUT":
-            data = request.json()
+            data = request.get_json()
             autor = data.get("autor", "")
             mensagem = data.get("mensagem", "")
             if autor and mensagem:
@@ -33,6 +34,7 @@ def handler(request, response):
     
 
 def read_posts():
+    collection = getCollection()
     posts = []
     for doc in collection.find({}, {'_id': 0}).sort('data', -1):
         posts.append(doc)
@@ -40,6 +42,7 @@ def read_posts():
 
 
 def save_post(autor, mensagem):
+    collection = getCollection()
     data = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
     post = {
         'autor': autor,
