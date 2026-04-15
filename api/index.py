@@ -17,11 +17,21 @@ def get_posts():
     posts = list(collection.find({}, {"_id": 0}))
     return {"posts": posts}
 
-
-@app.put("/blog")
-async def create_post(request: Request):
+@app.post("/blog")
+async def handle_blog(request: Request):
     data = await request.json()
 
+    action = data.get("action")
+
+    if action == "put":
+        return create_post(data)
+
+    elif action == "get":
+        return get_posts()
+
+    return {"error": "Ação inválida"}
+
+def create_post(data):
     autor = data.get("autor")
     mensagem = data.get("mensagem")
 
