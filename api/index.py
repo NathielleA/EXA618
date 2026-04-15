@@ -24,7 +24,7 @@ async def create_post(request: Request):
 
     action = data.get("action")
 
-    if action != "put":
+    if action == "put":
         autor = data.get("autor")
         mensagem = data.get("mensagem")
 
@@ -41,9 +41,9 @@ async def create_post(request: Request):
     
     elif action == "get":
         get_posts()
-        
+
     else:
-        return {"error": "Ação inválida"}
+        return {"error": "Ação inválida, veja se digitou certo 'put' ou 'get'!"}
 
 @app.get("/")
 def home():
