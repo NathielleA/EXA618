@@ -63,7 +63,3 @@ def handler(request):
             "statusCode": 500,
             "body": {"error": str(e)}
         }
-
-
-# export
-app = handler
