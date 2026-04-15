@@ -17,37 +17,31 @@ def get_posts():
     posts = list(collection.find({}, {"_id": 0}))
     return {"posts": posts}
 
-@app.post("/blog")
-async def handle_blog(request: Request):
+
+@app.put("/blog")
+async def create_post(request: Request):
     data = await request.json()
 
     action = data.get("action")
 
-    if action == "put":
-        return create_post(data)
+    if action != "put":
+        autor = data.get("autor")
+        mensagem = data.get("mensagem")
 
-    elif action == "get":
-        return get_posts()
+        if not autor or not mensagem:
+            return {"error": "Campos obrigatórios"}
+
+        collection.insert_one({
+            "autor": autor,
+            "mensagem": mensagem,
+            "data": datetime.now().strftime('%d/%m/%Y %H:%M:%S')
+        })
+
+        return {"status": "ok"}
     
-    if "action" not in data:
-        return {"error": "action obrigatória"}
-
-    return {"error": "Ação inválida"}
-
-def create_post(data):
-    autor = data.get("autor")
-    mensagem = data.get("mensagem")
-
-    if not autor or not mensagem:
-        return {"error": "Campos obrigatórios"}
-
-    collection.insert_one({
-        "autor": autor,
-        "mensagem": mensagem,
-        "data": datetime.now().strftime('%d/%m/%Y %H:%M:%S')
-    })
-
-    return {"status": "ok"}
+    elif action == "get":
+        get_posts()
+        return {"status": "ok"}
 
 @app.get("/")
 def home():
