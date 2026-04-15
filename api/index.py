@@ -41,7 +41,9 @@ async def create_post(request: Request):
     
     elif action == "get":
         get_posts()
-        return {"status": "ok"}
+        
+    else:
+        return {"error": "Ação inválida"}
 
 @app.get("/")
 def home():
