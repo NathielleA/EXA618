@@ -40,7 +40,7 @@ async def create_post(request: Request):
         return {"status": "ok"}
     
     elif action == "get":
-        get_posts()
+        return get_posts()
 
     else:
         return {"error": "Ação inválida, veja se digitou certo 'put' ou 'get'!"}
