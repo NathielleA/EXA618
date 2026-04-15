@@ -2,7 +2,3 @@
 fastapi
 uvicorn
 pymongo
-datetime
-urllib.parse
-os
-sys
