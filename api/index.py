@@ -28,6 +28,9 @@ async def handle_blog(request: Request):
 
     elif action == "get":
         return get_posts()
+    
+    if "action" not in data:
+        return {"error": "action obrigatória"}
 
     return {"error": "Ação inválida"}
 
