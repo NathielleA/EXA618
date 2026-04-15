@@ -1,3 +1,8 @@
 # Requisitos mínimos para API Python no Vercel
 fastapi
 uvicorn
+pymongo
+datetime
+urllib.parse
+os
+sys
