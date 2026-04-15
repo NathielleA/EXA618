@@ -1,14 +1,22 @@
+import os
 from fastapi import FastAPI, Request
+from pymongo import MongoClient
+from datetime import datetime
 
 app = FastAPI()
 
+MONGODB_URI = os.environ.get("MONGODB_URI")
+
+client = MongoClient(MONGODB_URI)
+db = client["blogdb"]
+collection = db["posts"]
+
+
 @app.get("/api/blog")
 def get_posts():
-    return {
-        "posts": [
-            {"autor": "Teste", "mensagem": "Funcionando 🚀"}
-        ]
-    }
+    posts = list(collection.find({}, {"_id": 0}))
+    return {"posts": posts}
+
 
 @app.put("/api/blog")
 async def create_post(request: Request):
@@ -20,8 +28,10 @@ async def create_post(request: Request):
     if not autor or not mensagem:
         return {"error": "Campos obrigatórios"}
 
-    return {
-        "status": "ok",
+    collection.insert_one({
         "autor": autor,
-        "mensagem": mensagem
-    }
+        "mensagem": mensagem,
+        "data": datetime.now().strftime('%d/%m/%Y %H:%M:%S')
+    })
+
+    return {"status": "ok"}
