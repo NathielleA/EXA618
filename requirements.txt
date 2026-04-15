@@ -1,1 +1,2 @@
 # Requisitos mínimos para API Python no Vercel
+pymongo
