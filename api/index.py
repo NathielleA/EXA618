@@ -12,13 +12,13 @@ db = client["blogdb"]
 collection = db["posts"]
 
 
-@app.get("/api/blog")
+@app.get("/blog")
 def get_posts():
     posts = list(collection.find({}, {"_id": 0}))
     return {"posts": posts}
 
 
-@app.put("/api/blog")
+@app.put("/blog")
 async def create_post(request: Request):
     data = await request.json()
 
@@ -35,4 +35,7 @@ async def create_post(request: Request):
     })
 
     return {"status": "ok"}
-#
+
+@app.get("/")
+def home():
+    return {"msg": "home funcionando"}
