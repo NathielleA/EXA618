@@ -18,10 +18,6 @@ def get_posts():
     return {"posts": posts}
 
 @app.post("/blog")
-def warning():
-    return {"error": "Use o método PUT para criar um post ou GET para listar os posts!"}
-
-@app.put("/blog")
 async def create_post(request: Request):
     data = await request.json()
 
