@@ -18,16 +18,8 @@
                 method: "POST",
                 body: json_data,
                 headers: header,
-                mode: "cors"
-            })
-                .then(function () {
-                    document.getElementById("msg").value = "";
-                    document.getElementById("autor").value = "";
-                    loadMessages();
-                })
-                .catch(function (error) {
-                    console.error("Error:", error);
-                });
+                mode: "no-cors"
+            });
         }
 
         function loadMessages() {
@@ -44,7 +36,7 @@
                     messagesDiv.innerHTML = "";
                     data.forEach(function (item) {
                         const messageElement = document.createElement("p");
-                        messageElement.textContent = item.author + ": " + item.message;
+                        messageElement.textContent = item[0] + ": " + item[1];
                         messagesDiv.appendChild(messageElement);
                     });
                 })
