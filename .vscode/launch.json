@@ -7,7 +7,7 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open Blog.html",
+            "name": "Open home.html",
             "file": "c:\\Users\\Josenia\\Documents\\GitHub\\EXA618\\atividade2-4\\Blog.html"
         }
     ]
